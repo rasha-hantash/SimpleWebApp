@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"html/template"
 	"net/http"
 	"os"
@@ -52,7 +51,6 @@ func main() {
 		}
 	})
 
-	fmt.Println("Listening on PORT 8080")
 	//Start the web server, set the port to listen to 8080. Without a path it assumes localhost
 	//Print any errors from starting the webserver using fmt
 	port, ok := os.LookupEnv("PORT")
